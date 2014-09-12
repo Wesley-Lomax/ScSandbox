@@ -29,7 +29,7 @@ TestResults
 build/environment.props
 lib/*.dll
 lib/*.pdb
-/packages
+[Pp]ackages/
 
 # Build ignores
 /msbuild.log
