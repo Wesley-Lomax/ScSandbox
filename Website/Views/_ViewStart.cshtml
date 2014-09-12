@@ -1,3 +1,11 @@
-﻿@{
+﻿@using Sitecore.Mvc
+@inherits System.Web.Mvc.WebViewPage
+
+@{
     Layout = "~/Views/Shared/_Layout.cshtml";
-}
+} 
+
+@Html.Sitecore().ViewRendering("/Views/PageHeader.cshtml")
+
+
+@Html.Sitecore().Placeholder("content")

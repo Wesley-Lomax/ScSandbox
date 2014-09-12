@@ -1,0 +1,10 @@
+﻿@using Sitecore.Mvc.Presentation
+@using Sitecore.Mvc
+@model RenderingModel
+
+
+<p> @Model.Item.Name has a title of @Model.Item.Fields["Title"]</p>
+
+<h1>@Html.Sitecore().Field("Title")</h1>
+
+<p>@Html.Sitecore().Field("Text")</p>
