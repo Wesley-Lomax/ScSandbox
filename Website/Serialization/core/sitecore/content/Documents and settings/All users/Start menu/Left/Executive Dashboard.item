@@ -1,0 +1,304 @@
+----item----
+version: 1
+id: {6E19BF07-67CB-41EB-B091-E0C840D07211}
+database: core
+path: /sitecore/content/Documents and settings/All users/Start menu/Left/Executive Dashboard
+parent: {EBA3991F-8D26-41B1-97E5-090D55020AA0}
+name: Executive Dashboard
+master: {5E8CFCF9-CEF2-4BDB-9E35-219C50184066}
+template: {72450C9C-98C4-4117-88B7-573110C7E0C0}
+templatekey: Application shortcut
+
+----field----
+field: {8A1AC797-0304-4C50-AAAC-4D9DBBFF435F}
+name: Application
+key: application
+content-length: 147
+
+<link linktype="internal" url="/Applications/Analytics/Executive Dashboard" querystring="" target="" id="{E63A01A1-C7E2-4A47-9BB3-6CFFDB305CC8}" />
+----field----
+field: {238A40DA-15F2-4412-B720-8F192FFA7491}
+name: Icon
+key: icon
+content-length: 22
+
+People/16x16/gauge.png
+----field----
+field: {06D5295C-ED2F-4A54-9BF2-26228D113318}
+name: __Icon
+key: __icon
+content-length: 22
+
+People/32x32/gauge.png
+----field----
+field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
+name: __Sortorder
+key: __sortorder
+content-length: 3
+
+300
+----field----
+field: {F6D8A61C-2F84-4401-BD24-52D2068172BC}
+name: __Originator
+key: __originator
+content-length: 0
+
+
+----field----
+field: {DEC8D2D5-E3CF-48B6-A653-8E69E2716641}
+name: __Security
+key: __security
+content-length: 46
+
+ar|sitecore\Analytics Reporting|pe|+item:read|
+----version----
+language: da
+version: 1
+revision: 3edc110f-f1f2-4a13-a268-3d3ca1fe0dc6
+
+----field----
+field: {C032DB76-CC34-4F8F-BE2D-D2FB35237AAB}
+name: Display name
+key: display name
+content-length: 19
+
+Executive Dashboard
+----field----
+field: {BB865E67-0BE3-49D8-B8BD-1DB4B34AB2E3}
+name: Tool tip
+key: tool tip
+content-length: 26
+
+Ledelses indsigt Dashboard
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 34
+
+20140526T180254:635367241740259272
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+3edc110f-f1f2-4a13-a268-3d3ca1fe0dc6
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20140526T180254:635367241741509256
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----version----
+language: de-DE
+version: 1
+revision: 131c3c8e-21ae-430b-9172-a6e648c2a4e6
+
+----field----
+field: {C032DB76-CC34-4F8F-BE2D-D2FB35237AAB}
+name: Display name
+key: display name
+content-length: 19
+
+Executive Dashboard
+----field----
+field: {BB865E67-0BE3-49D8-B8BD-1DB4B34AB2E3}
+name: Tool tip
+key: tool tip
+content-length: 27
+
+Executive Insight Dashboard
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 34
+
+20140526T181414:635367248549737711
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+131c3c8e-21ae-430b-9172-a6e648c2a4e6
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20140526T181414:635367248549893958
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----version----
+language: en
+version: 1
+revision: f56abea5-9609-46d5-bc17-4f5ece3f4ac8
+
+----field----
+field: {C032DB76-CC34-4F8F-BE2D-D2FB35237AAB}
+name: Display name
+key: display name
+content-length: 19
+
+Executive Dashboard
+----field----
+field: {BB865E67-0BE3-49D8-B8BD-1DB4B34AB2E3}
+name: Tool tip
+key: tool tip
+content-length: 28
+
+Executive Insight Dashboard 
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 15
+
+20110207T121524
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+f56abea5-9609-46d5-bc17-4f5ece3f4ac8
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20110324T091556:634365549563857032
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\Admin
+----version----
+language: ja-JP
+version: 1
+revision: b60d7e20-95ad-4300-9842-49f0b3f37000
+
+----field----
+field: {C032DB76-CC34-4F8F-BE2D-D2FB35237AAB}
+name: Display name
+key: display name
+content-length: 15
+
+エグゼクティブ ダッシュボード
+----field----
+field: {BB865E67-0BE3-49D8-B8BD-1DB4B34AB2E3}
+name: Tool tip
+key: tool tip
+content-length: 12
+
+サイト分析ダッシュボード
+----field----
+field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
+name: __Display name
+key: __display name
+content-length: 15
+
+エグゼクティブ ダッシュボード
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 34
+
+20140526T182544:635367255444222033
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+b60d7e20-95ad-4300-9842-49f0b3f37000
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20140526T182544:635367255445003263
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin

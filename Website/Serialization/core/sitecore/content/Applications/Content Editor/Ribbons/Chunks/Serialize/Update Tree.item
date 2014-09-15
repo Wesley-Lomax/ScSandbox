@@ -1,0 +1,304 @@
+----item----
+version: 1
+id: {D28ED9DB-6B7E-4EBB-A2CA-7507CA783B85}
+database: core
+path: /sitecore/content/Applications/Content Editor/Ribbons/Chunks/Serialize/Update Tree
+parent: {7496E82D-16B7-4DF3-8188-76AFA765415D}
+name: Update Tree
+master: {00000000-0000-0000-0000-000000000000}
+template: {9F62EBD5-2280-4A35-BE51-A210D831D687}
+templatekey: Small Button
+
+----field----
+field: {8E40AB40-8C83-4FF7-9D33-38ED9458DE1E}
+name: Icon
+key: icon
+content-length: 26
+
+Business/16x16/data_up.png
+----field----
+field: {4C2DEDB4-40FB-4166-8221-C4DD3E914478}
+name: Click
+key: click
+content-length: 17
+
+itemsync:loadtree
+----field----
+field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
+name: __Sortorder
+key: __sortorder
+content-length: 3
+
+250
+----field----
+field: {56776EDF-261C-4ABC-9FE7-70C618795239}
+name: __Help link
+key: __help link
+content-length: 7
+
+<link/>
+----field----
+field: {DEC8D2D5-E3CF-48B6-A653-8E69E2716641}
+name: __Security
+key: __security
+content-length: 84
+
+ar|sitecore\Sitecore Client Authoring|pe|+item:read|pd|+item:read|a?|Everyone|p*|!*|
+----field----
+field: {A4F985D9-98B3-4B52-AAAF-4344F6E747C6}
+name: __Workflow
+key: __workflow
+content-length: 0
+
+
+----version----
+language: da
+version: 1
+revision: c5ab8fc1-8d7a-4c34-bc0a-6eb733c010b9
+
+----field----
+field: {C184F18B-B452-44D6-8376-FACD6CEF8A42}
+name: Header
+key: header
+content-length: 11
+
+Opdater træ
+----field----
+field: {A47CD065-C361-4332-B22B-7E2148DE06F4}
+name: Tooltip
+key: tooltip
+content-length: 51
+
+Opdater elementet og subelementerne fra filsystemet
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 34
+
+20140526T180950:635367245905683191
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+c5ab8fc1-8d7a-4c34-bc0a-6eb733c010b9
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20140526T180950:635367245905839435
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----version----
+language: de-DE
+version: 1
+revision: b5901add-31e1-4390-bf5c-ee13413d2635
+
+----field----
+field: {C184F18B-B452-44D6-8376-FACD6CEF8A42}
+name: Header
+key: header
+content-length: 11
+
+Update Tree
+----field----
+field: {A47CD065-C361-4332-B22B-7E2148DE06F4}
+name: Tooltip
+key: tooltip
+content-length: 58
+
+Das Item und das Subitem aus dem Dateisystem aktualisieren
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 34
+
+20140526T182007:635367252079245713
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+b5901add-31e1-4390-bf5c-ee13413d2635
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20140526T182007:635367252079401959
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----version----
+language: en
+version: 1
+revision: d39c883f-8115-42af-95f9-b3f55ef24b01
+
+----field----
+field: {C184F18B-B452-44D6-8376-FACD6CEF8A42}
+name: Header
+key: header
+content-length: 11
+
+Update Tree
+----field----
+field: {A47CD065-C361-4332-B22B-7E2148DE06F4}
+name: Tooltip
+key: tooltip
+content-length: 49
+
+Update the item and subitems from the file system
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 15
+
+20070928T143328
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+d39c883f-8115-42af-95f9-b3f55ef24b01
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 15
+
+20071031T113014
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {3E431DE1-525E-47A3-B6B0-1CCBEC3A8C98}
+name: __Workflow state
+key: __workflow state
+content-length: 0
+
+
+----version----
+language: ja-JP
+version: 1
+revision: 8c24bd81-24a0-4697-9c32-938edeb49523
+
+----field----
+field: {C184F18B-B452-44D6-8376-FACD6CEF8A42}
+name: Header
+key: header
+content-length: 6
+
+ツリーを更新
+----field----
+field: {A47CD065-C361-4332-B22B-7E2148DE06F4}
+name: Tooltip
+key: tooltip
+content-length: 28
+
+ファイル システムからアイテムとサブアイテムを更新します
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 34
+
+20140526T183302:635367259825120949
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+8c24bd81-24a0-4697-9c32-938edeb49523
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20140526T183302:635367259825120949
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin

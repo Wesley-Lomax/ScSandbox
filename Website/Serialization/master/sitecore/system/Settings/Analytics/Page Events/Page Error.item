@@ -1,0 +1,304 @@
+----item----
+version: 1
+id: {B6076B52-7EA9-4297-B799-864ACDCB0257}
+database: master
+path: /sitecore/system/Settings/Analytics/Page Events/Page Error
+parent: {633273C1-02A5-4EBC-9B82-BD1A7C684FEA}
+name: Page Error
+master: {00000000-0000-0000-0000-000000000000}
+template: {059CFBDF-49FC-4F14-A4E5-B63E1E1AFB1E}
+templatekey: Page Event
+
+----field----
+field: {AC6BA888-4213-43BD-B787-D8DA2B6B881F}
+name: Name
+key: name
+content-length: 10
+
+Page Error
+----field----
+field: {BD5D2A52-027F-4CC8-9606-C5CE6CBBF437}
+name: IsFailure
+key: isfailure
+content-length: 1
+
+1
+----field----
+field: {E4D0FAF3-61E7-44D4-A921-CE5C606A8DA8}
+name: IsSystem
+key: issystem
+content-length: 0
+
+
+----field----
+field: {A4F985D9-98B3-4B52-AAAF-4344F6E747C6}
+name: __Workflow
+key: __workflow
+content-length: 38
+
+{689E2994-4656-4C58-9112-7826CB46EE69}
+----version----
+language: da
+version: 1
+revision: 3e2d64bc-ca89-42c4-b828-4bd7dc30e043
+
+----field----
+field: {797466F5-763B-4299-B6AD-E4192BF21222}
+name: Description
+key: description
+content-length: 27
+
+Der opstod en fejl på siden
+----field----
+field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
+name: __Display name
+key: __display name
+content-length: 8
+
+Sidefejl
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 34
+
+20140526T180614:635367243747272574
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+3e2d64bc-ca89-42c4-b828-4bd7dc30e043
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20140526T180614:635367243749147538
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {3E431DE1-525E-47A3-B6B0-1CCBEC3A8C98}
+name: __Workflow state
+key: __workflow state
+content-length: 38
+
+{EDCBB550-BED3-490F-82B8-7B2F14CCD26E}
+----version----
+language: de-DE
+version: 1
+revision: b3522936-763e-4fda-b3e2-ade3ac9204d2
+
+----field----
+field: {797466F5-763B-4299-B6AD-E4192BF21222}
+name: Description
+key: description
+content-length: 40
+
+Ein Fehler ist auf der Seite aufgetreten
+----field----
+field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
+name: __Display name
+key: __display name
+content-length: 12
+
+Seitenfehler
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 34
+
+20140526T181647:635367250070364059
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+b3522936-763e-4fda-b3e2-ade3ac9204d2
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20140526T181647:635367250071457816
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {3E431DE1-525E-47A3-B6B0-1CCBEC3A8C98}
+name: __Workflow state
+key: __workflow state
+content-length: 38
+
+{EDCBB550-BED3-490F-82B8-7B2F14CCD26E}
+----version----
+language: en
+version: 1
+revision: 85691cdf-29cc-4e60-af71-fd8fd208b240
+
+----field----
+field: {797466F5-763B-4299-B6AD-E4192BF21222}
+name: Description
+key: description
+content-length: 29
+
+An error occurred on the page
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 15
+
+20081211T095437
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+85691cdf-29cc-4e60-af71-fd8fd208b240
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20110524T150203:634418461233305306
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {3E431DE1-525E-47A3-B6B0-1CCBEC3A8C98}
+name: __Workflow state
+key: __workflow state
+content-length: 38
+
+{EDCBB550-BED3-490F-82B8-7B2F14CCD26E}
+----version----
+language: ja-JP
+version: 1
+revision: a5c5aab2-1e23-4940-af2c-d2c2c26f2423
+
+----field----
+field: {797466F5-763B-4299-B6AD-E4192BF21222}
+name: Description
+key: description
+content-length: 14
+
+ページでエラーが発生したとき
+----field----
+field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
+name: __Display name
+key: __display name
+content-length: 7
+
+ページ エラー
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 34
+
+20140526T182842:635367257228580507
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+a5c5aab2-1e23-4940-af2c-d2c2c26f2423
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20140526T182843:635367257230299268
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {3E431DE1-525E-47A3-B6B0-1CCBEC3A8C98}
+name: __Workflow state
+key: __workflow state
+content-length: 38
+
+{EDCBB550-BED3-490F-82B8-7B2F14CCD26E}

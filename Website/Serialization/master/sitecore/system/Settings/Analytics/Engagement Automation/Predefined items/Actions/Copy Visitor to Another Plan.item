@@ -1,0 +1,248 @@
+----item----
+version: 1
+id: {3DA5A471-B155-44B6-99CC-BE531E9FEA60}
+database: master
+path: /sitecore/system/Settings/Analytics/Engagement Automation/Predefined items/Actions/Copy Visitor to Another Plan
+parent: {745CBAD6-FEFE-4F29-A686-6080FEA87341}
+name: Copy Visitor to Another Plan
+master: {00000000-0000-0000-0000-000000000000}
+template: {8C5EAD00-5F68-4310-AB0C-84F283B5EE0A}
+templatekey: Engagement Automation Action
+
+----field----
+field: {A291A22B-99E2-46BB-A27B-8EC744275396}
+name: Type
+key: type
+content-length: 128
+
+Sitecore.Automation.MarketingAutomation.AutomationActions.CopyVisitorToAnotherPlanAction,Sitecore.Automation.MarketingAutomation
+----field----
+field: {1507131D-CEE3-49E9-AF32-DE5403A37B49}
+name: Parameters
+key: parameters
+content-length: 51
+
+AutomationActionDescription=&AutomationStateItemId=
+----field----
+field: {8728A037-47D3-4180-B754-87926EDA7AE8}
+name: Editor
+key: editor
+content-length: 64
+
+/sitecore/shell/default.aspx?xmlcontrol=CopyVisitorToAnotherPlan
+----version----
+language: da
+version: 1
+revision: 39ca1880-cb97-4779-af6a-0479f27a0dfb
+
+----field----
+field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
+name: __Display name
+key: __display name
+content-length: 34
+
+Kopier besøgende til en anden plan
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 34
+
+20140526T180121:635367240815896104
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+39ca1880-cb97-4779-af6a-0479f27a0dfb
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20140526T180121:635367240815896104
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----version----
+language: de-DE
+version: 1
+revision: 69c1388c-8dad-407a-b132-9361e8cad9ef
+
+----field----
+field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
+name: __Display name
+key: __display name
+content-length: 39
+
+Besucher in einen anderen Plan kopieren
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 34
+
+20140526T181322:635367248028178651
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+69c1388c-8dad-407a-b132-9361e8cad9ef
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20140526T181322:635367248028178651
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----version----
+language: en
+version: 1
+revision: 8538de3d-26c5-45f3-a2d7-341e16aff4af
+
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 15
+
+20110330T091200
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+8538de3d-26c5-45f3-a2d7-341e16aff4af
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20110415T135003:634384722035307156
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----version----
+language: ja-JP
+version: 1
+revision: 6d32737d-f518-44c5-bc82-316afbbadab5
+
+----field----
+field: {06F2D72A-1924-4B9A-BA1E-186CE4E57EFD}
+name: Description
+key: description
+content-length: 2
+
+説明
+----field----
+field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
+name: __Display name
+key: __display name
+content-length: 16
+
+ビジターを別のプランにコピーする
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 34
+
+20140526T182354:635367254341259299
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+6d32737d-f518-44c5-bc82-316afbbadab5
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20140526T182354:635367254341571795
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin

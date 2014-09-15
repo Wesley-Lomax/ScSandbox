@@ -1,0 +1,289 @@
+----item----
+version: 1
+id: {B03BB007-FB91-44E2-A3AE-A3B6DBD99F82}
+database: master
+path: /sitecore/system/Settings/Analytics/Reports SQL Queries/Top Leads By Activity - Unclassified
+parent: {DAA53CA5-8136-462F-8B2A-F66365BE1238}
+name: Top Leads By Activity - Unclassified
+master: {00000000-0000-0000-0000-000000000000}
+template: {A90F48C4-4D4F-41D7-8497-070A9A50304E}
+templatekey: ReportQuery
+
+----field----
+field: {A61CC636-3272-4FB6-BCF9-762940047A78}
+name: SqlServer
+key: sqlserver
+content-length: 1059
+
+select	top 50
+					[LocationId],
+					[VisitorsByLocation].[VisitorClassification],
+					[VisitorsByLocation].[Country],
+					[VisitorsByLocation].[BusinessName],
+					MAX([Date]) as [RecentDate],					
+					COUNT(*) AS [TotalVisitors],
+					SUM([Visits]) AS [TotalVisits],			
+					SUM([Value]) AS [TotalValue],
+					CONVERT(float, SUM([Visits])) * COUNT(*) / 1000 [Rating],
+					[VisitorClassifications].[Text]
+					
+			from [VisitorsByLocation], [VisitorClassifications]
+			WHERE
+                          [Date] BETWEEN CONVERT(nvarchar(8), @StartDate, 112) AND CONVERT(nvarchar(8), @EndDate, 112) AND 
+			  [VisitorsByLocation].[VisitorClassification] = 0 AND 
+			  [VisitorsByLocation].[VisitorClassification] = [VisitorClassifications].[VisitorClassification]
+        /*|*/
+			group by	[VisitorsByLocation].[LocationId],
+						[VisitorsByLocation].[VisitorClassification],
+						[VisitorsByLocation].[Country],
+						[VisitorsByLocation].[BusinessName],
+						[VisitorClassifications].[Text],
+[VisitorsByLocation].[VisitorId]
+			order by [Rating] desc
+		
+----field----
+field: {E6A8E2B9-2111-40A2-B4AC-88A607E68307}
+name: Oracle
+key: oracle
+content-length: 1111
+
+select * from (select	
+					"LOCATIONID",
+          "VISITORSBYLOCATION"."VISITORCLASSIFICATION",
+					"VISITORSBYLOCATION"."COUNTRY",
+					"VISITORSBYLOCATION"."BUSINESSNAME",
+					max("DATE") as "RECENTDATE",				
+					COUNT(*) as "TOTALVISITORS",
+					SUM("VISITS") as "TOTALVISITS",			
+					SUM(value) as "TOTALVALUE",
+					cast(SUM("VISITS") as float) * COUNT(*) / 1000 "RATING",
+          "VISITORCLASSIFICATIONS"."TEXT"
+			from "VISITORSBYLOCATION", "VISITORCLASSIFICATIONS" 
+			where 
+              "DATE" BETWEEN TO_CHAR ( :StartDate, 'YYYYMMDD') AND TO_CHAR ( :EndDate, 'YYYYMMDD') AND
+              "VISITORSBYLOCATION"."VISITORCLASSIFICATION" = "VISITORCLASSIFICATIONS"."VISITORCLASSIFICATION" and
+              "VISITORSBYLOCATION"."VISITORCLASSIFICATION" = 0
+			group by  "VISITORSBYLOCATION"."LOCATIONID", 
+                "VISITORSBYLOCATION"."VISITORCLASSIFICATION", 
+                "VISITORSBYLOCATION"."BUSINESSNAME",
+                "VISITORSBYLOCATION"."COUNTRY",
+"VISITORSBYLOCATION"."VISITORID",
+                "VISITORCLASSIFICATIONS"."TEXT"
+			order by RATING desc) WHERE ROWNUM <= 50
+
+----field----
+field: {5B267810-1945-4C4B-8FB3-FD68A537EEB2}
+name: Filters
+key: filters
+content-length: 77
+
+{582C9DD5-8E92-4B15-873F-CB8AE43B867E}|{BBA8B015-FC5F-467F-B59E-1B9E45157ACA}
+----version----
+language: da
+version: 1
+revision: 9ba52671-1584-4599-9278-a1137a96153c
+
+----field----
+field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
+name: __Display name
+key: __display name
+content-length: 61
+
+Vigtigste potentielle kunder efter aktivitet - Uklassificeret
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 34
+
+20140526T180937:635367245774281987
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+9ba52671-1584-4599-9278-a1137a96153c
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20140526T180937:635367245774281987
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----version----
+language: de-DE
+version: 1
+revision: aa600fe4-a6eb-4895-83c6-6f4a87231cdc
+
+----field----
+field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
+name: __Display name
+key: __display name
+content-length: 39
+
+Top Leads nach Aktivität - uneingestuft
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 34
+
+20140526T181949:635367251893624141
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+aa600fe4-a6eb-4895-83c6-6f4a87231cdc
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20140526T181949:635367251893624141
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----version----
+language: en
+version: 1
+revision: fb0def57-a99a-4873-81f7-eb36e057eee2
+
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 15
+
+20110211T144100
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+fb0def57-a99a-4873-81f7-eb36e057eee2
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20120806T152452:634798634921238238
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----version----
+language: ja-JP
+version: 1
+revision: 56561b67-88dc-46d1-b337-c2770801c09c
+
+----field----
+field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
+name: __Display name
+key: __display name
+content-length: 21
+
+上位リード (アクティビティ) - 未分類
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 34
+
+20140526T183248:635367259683404013
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+56561b67-88dc-46d1-b337-c2770801c09c
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20140526T183248:635367259683404013
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin

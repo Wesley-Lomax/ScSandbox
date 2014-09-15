@@ -1,0 +1,248 @@
+----item----
+version: 1
+id: {3B79160E-10DE-4253-9916-68036B6C9EE0}
+database: core
+path: /sitecore/content/Applications/Security/User Manager/Ribbon/Home/Users/Unlock
+parent: {3D81202A-CC03-46E4-86A0-CEC530A8EF07}
+name: Unlock
+master: {00000000-0000-0000-0000-000000000000}
+template: {9F62EBD5-2280-4A35-BE51-A210D831D687}
+templatekey: Small Button
+
+----field----
+field: {8E40AB40-8C83-4FF7-9D33-38ED9458DE1E}
+name: Icon
+key: icon
+content-length: 27
+
+Network/16x16/lock_open.png
+----field----
+field: {4C2DEDB4-40FB-4166-8221-C4DD3E914478}
+name: Click
+key: click
+content-length: 18
+
+usermanager:unlock
+----field----
+field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
+name: __Sortorder
+key: __sortorder
+content-length: 3
+
+800
+----version----
+language: da
+version: 1
+revision: 343617e7-2df1-44a8-850f-53039190eca6
+
+----field----
+field: {C184F18B-B452-44D6-8376-FACD6CEF8A42}
+name: Header
+key: header
+content-length: 6
+
+Lås op
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 34
+
+20140526T180948:635367245884434007
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+343617e7-2df1-44a8-850f-53039190eca6
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20140526T180948:635367245884434007
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----version----
+language: de-DE
+version: 1
+revision: 486a5ff3-07d9-48fc-ba30-6e3544bd9060
+
+----field----
+field: {C184F18B-B452-44D6-8376-FACD6CEF8A42}
+name: Header
+key: header
+content-length: 10
+
+Entsperren
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 34
+
+20140526T182004:635367252047684021
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+486a5ff3-07d9-48fc-ba30-6e3544bd9060
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20140526T182004:635367252047684021
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----version----
+language: en
+version: 1
+revision: 283cc9d4-d505-4fc9-bb00-53b9e75f4cc9
+
+----field----
+field: {C184F18B-B452-44D6-8376-FACD6CEF8A42}
+name: Header
+key: header
+content-length: 6
+
+Unlock
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 15
+
+20070511T134945
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+283cc9d4-d505-4fc9-bb00-53b9e75f4cc9
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 15
+
+20070530T160702
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----version----
+language: ja-JP
+version: 1
+revision: 22d50ae8-e735-452d-9983-49f590ca6445
+
+----field----
+field: {C184F18B-B452-44D6-8376-FACD6CEF8A42}
+name: Header
+key: header
+content-length: 5
+
+ロック解除
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 34
+
+20140526T183300:635367259804808709
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+22d50ae8-e735-452d-9983-49f590ca6445
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20140526T183300:635367259804808709
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin

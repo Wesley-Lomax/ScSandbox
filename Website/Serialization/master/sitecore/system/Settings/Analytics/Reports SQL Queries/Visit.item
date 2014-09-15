@@ -1,0 +1,290 @@
+----item----
+version: 1
+id: {40EEF1EB-848B-4911-A4D0-36C44BB9B841}
+database: master
+path: /sitecore/system/Settings/Analytics/Reports SQL Queries/Visit
+parent: {DAA53CA5-8136-462F-8B2A-F66365BE1238}
+name: Visit
+master: {00000000-0000-0000-0000-000000000000}
+template: {A90F48C4-4D4F-41D7-8497-070A9A50304E}
+templatekey: ReportQuery
+
+----field----
+field: {A61CC636-3272-4FB6-BCF9-762940047A78}
+name: SqlServer
+key: sqlserver
+content-length: 813
+
+select
+		[Visits].[City],
+		[Visits].[Country],
+		[Visits].[VisitorId],
+		[Visits].[EndDateTime],
+		[Visits].[StartDateTime],
+		[Visits].[IspName],
+		[Visits].[Region],
+		[Visits].[Value],
+		[Visits].[VisitPageCount],
+		[Visits].[BusinessName],
+		[Visits].[VisitorVisitIndex],
+		[Keywords].[KeywordsId],
+		[Keywords].[Text] as [Keyword],
+		[ReferringSites].[ReferringSiteId],
+		[ReferringSites].[Host] as [ReferringSite],
+		[Visitors].[VisitCount],
+		[Visitors].[VisitorId]
+from 
+		[Visits]
+			INNER JOIN 
+		[ReferringSites] on [Visits].[ReferringSiteId] = [ReferringSites].[ReferringSiteId] 
+			INNER JOIN
+		[Keywords] on [Visits].[KeywordsId] = [Keywords].[KeywordsId]
+			INNER JOIN
+		[Visitors] on [Visits].[VisitorId] = [Visitors].[VisitorId]
+where
+		[Visits].[VisitId] = @VisitId
+
+----field----
+field: {E6A8E2B9-2111-40A2-B4AC-88A607E68307}
+name: Oracle
+key: oracle
+content-length: 813
+
+select
+		"VISITS"."CITY",
+		"VISITS"."COUNTRY",
+		"VISITS"."VISITORID",
+		"VISITS"."ENDDATETIME",
+		"VISITS"."STARTDATETIME",
+		"VISITS"."ISPNAME",
+		"VISITS"."REGION",
+		"VISITS"."VALUE",
+		"VISITS"."VISITPAGECOUNT",
+		"VISITS"."BUSINESSNAME",
+		"VISITS"."VISITORVISITINDEX",
+		"KEYWORDS"."KEYWORDSID",
+		"KEYWORDS"."TEXT" as "KEYWORD",
+		"REFERRINGSITES"."REFERRINGSITEID",
+		"REFERRINGSITES"."HOST" as "REFERRINGSITE",
+		"VISITORS"."VISITCOUNT",
+		"VISITORS"."VISITORID"
+from 
+		"VISITS"
+			INNER JOIN 
+		"REFERRINGSITES" on "VISITS"."REFERRINGSITEID" = "REFERRINGSITES"."REFERRINGSITEID" 
+			INNER JOIN
+		"KEYWORDS" on "VISITS"."KEYWORDSID" = "KEYWORDS"."KEYWORDSID"
+			INNER JOIN
+		"VISITORS" on "VISITS"."VISITORID" = "VISITORS"."VISITORID"
+where
+		"VISITS"."VISITID" = :VisitId
+
+----version----
+language: da
+version: 1
+revision: 840973b6-2425-4ac5-9c3d-a8ba42caf10a
+
+----field----
+field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
+name: __Display name
+key: __display name
+content-length: 5
+
+Besøg
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 34
+
+20140526T181004:635367246046306921
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+840973b6-2425-4ac5-9c3d-a8ba42caf10a
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20140526T181004:635367246046306921
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----version----
+language: de-DE
+version: 1
+revision: 244a0e9e-0dd1-4211-9894-a78c56e4cd83
+
+----field----
+field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
+name: __Display name
+key: __display name
+content-length: 6
+
+Besuch
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 34
+
+20140526T182033:635367252331586351
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+244a0e9e-0dd1-4211-9894-a78c56e4cd83
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20140526T182033:635367252331586351
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----version----
+language: en
+version: 1
+revision: 285fa6da-ca50-45d3-a8e1-aa5d18df83fd
+
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 15
+
+20110211T150748
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+285fa6da-ca50-45d3-a8e1-aa5d18df83fd
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20111213T023113:634593402737775691
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----version----
+language: ja-JP
+version: 1
+revision: 33757299-62c4-4fbe-842b-794466019c01
+
+----field----
+field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
+name: __Display name
+key: __display name
+content-length: 2
+
+訪問
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 34
+
+20140526T183331:635367260112464247
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+33757299-62c4-4fbe-842b-794466019c01
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20140526T183331:635367260112464247
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin

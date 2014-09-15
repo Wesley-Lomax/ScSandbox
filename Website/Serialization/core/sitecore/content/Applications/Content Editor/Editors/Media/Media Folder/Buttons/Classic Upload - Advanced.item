@@ -1,0 +1,248 @@
+----item----
+version: 1
+id: {98992989-2721-4CDA-8AA9-50A5D88E41A1}
+database: core
+path: /sitecore/content/Applications/Content Editor/Editors/Media/Media Folder/Buttons/Classic Upload - Advanced
+parent: {24F29147-F13D-4655-B266-B572718D0FB3}
+name: Classic Upload - Advanced
+master: {00000000-0000-0000-0000-000000000000}
+template: {E7142FE9-4DF3-48B5-86C0-2E1FB728059C}
+templatekey: Click
+
+----field----
+field: {BD3D128A-A690-4D91-A553-E33B3EF8CC39}
+name: Icon
+key: icon
+content-length: 32
+
+Applications/32x32/folder_up.png
+----field----
+field: {083228AD-C969-40BE-A14A-0CF42F39C3B2}
+name: Command
+key: command
+content-length: 17
+
+media:batchupload
+----version----
+language: da
+version: 1
+revision: 6a32f6f8-5dee-40f8-886a-dfa8d24e3a30
+
+----field----
+field: {52635E27-9E6B-4BE6-A571-3A419A93102C}
+name: Header
+key: header
+content-length: 24
+
+Upload filer (Avanceret)
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 34
+
+20140526T180044:635367240448572252
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+6a32f6f8-5dee-40f8-886a-dfa8d24e3a30
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20140526T180044:635367240448572252
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----version----
+language: de-DE
+version: 1
+revision: 620e8acf-fe0d-443e-87cc-eadb1e600aed
+
+----field----
+field: {52635E27-9E6B-4BE6-A571-3A419A93102C}
+name: Header
+key: header
+content-length: 29
+
+Dateien hochladen (erweitert)
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 34
+
+20140526T181254:635367247743175039
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+620e8acf-fe0d-443e-87cc-eadb1e600aed
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20140526T181254:635367247743175039
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----version----
+language: en
+version: 1
+revision: 3f5435f2-9d66-4da6-afd1-4b8e3a6f78db
+
+----field----
+field: {52635E27-9E6B-4BE6-A571-3A419A93102C}
+name: Header
+key: header
+content-length: 23
+
+Upload Files (Advanced)
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 15
+
+20070913T191443
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+3f5435f2-9d66-4da6-afd1-4b8e3a6f78db
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 15
+
+20071112T101726
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----version----
+language: ja-JP
+version: 1
+revision: ec18dc31-e325-4a83-936e-adfe6e2c7608
+
+----field----
+field: {52635E27-9E6B-4BE6-A571-3A419A93102C}
+name: Header
+key: header
+content-length: 19
+
+アップロード (複数 - 高度な設定)
+----field----
+field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
+name: __Display name
+key: __display name
+content-length: 20
+
+クラシック アップロード - 高度な設定
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 34
+
+20140526T182312:635367253922824191
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+ec18dc31-e325-4a83-936e-adfe6e2c7608
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20140526T182312:635367253922980442
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin

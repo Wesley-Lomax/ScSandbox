@@ -1,0 +1,280 @@
+----item----
+version: 1
+id: {2A169D37-2090-494F-806F-3155BDB6DF9C}
+database: master
+path: /sitecore/system/Settings/Analytics/Reports SQL Queries/Organization
+parent: {DAA53CA5-8136-462F-8B2A-F66365BE1238}
+name: Organization
+master: {00000000-0000-0000-0000-000000000000}
+template: {A90F48C4-4D4F-41D7-8497-070A9A50304E}
+templatekey: ReportQuery
+
+----field----
+field: {A61CC636-3272-4FB6-BCF9-762940047A78}
+name: SqlServer
+key: sqlserver
+content-length: 687
+
+select
+	[TopLocations].*,
+		[VisitorClassifications].[Text],
+		[Locations].[Country],	
+		[Locations].[BusinessName],		
+		[Locations].[VisitorClassification]
+from
+		(
+select	[LocationId],
+	MAX([Date]) as [RecentDate],
+	MIN([Date]) as [OldDate],					
+	COUNT(*) AS [TotalVisitors],
+	SUM([Visits]) AS [TotalVisits],			
+	SUM([Value]) AS [TotalValue]
+	from [VisitorsByLocation]
+			where 	 [LocationId] = @LocationId 
+			group by [VisitorsByLocation].[LocationId]			
+		) [TopLocations], 
+		[Locations],		
+		[VisitorClassifications]		 			 
+where	
+	[Locations].[VisitorClassification] = [VisitorClassifications].[VisitorClassification] AND
+	[TopLocations].[LocationId] = [Locations].[LocationId]
+
+----field----
+field: {E6A8E2B9-2111-40A2-B4AC-88A607E68307}
+name: Oracle
+key: oracle
+content-length: 688
+
+select
+	"TOPLOCATIONS".*,
+		"VISITORCLASSIFICATIONS"."TEXT",
+		"LOCATIONS"."COUNTRY",	
+		"LOCATIONS"."BUSINESSNAME",		
+		"LOCATIONS"."VISITORCLASSIFICATION"
+from
+		(
+select	"LOCATIONID",
+	MAX("DATE") as "RECENTDATE",
+	MIN("DATE") as "OLDDATE",					
+	COUNT(*) AS "TOTALVISITORS",
+	SUM("VISITS") AS "TOTALVISITS",			
+	SUM("VALUE") AS "TOTALVALUE"
+	from "VISITORSBYLOCATION" 
+			where 	 "LOCATIONID" = :LocationId 
+			group by "VISITORSBYLOCATION"."LOCATIONID"			
+		) "TOPLOCATIONS", 
+		"LOCATIONS",		
+		"VISITORCLASSIFICATIONS"		 			 
+where	
+	"LOCATIONS"."VISITORCLASSIFICATION" = "VISITORCLASSIFICATIONS"."VISITORCLASSIFICATION" AND
+	"TOPLOCATIONS"."LOCATIONID" = "LOCATIONS"."LOCATIONID"
+
+----version----
+language: da
+version: 1
+revision: c4615101-1a86-4117-b275-c2ea7f55d10f
+
+----field----
+field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
+name: __Display name
+key: __display name
+content-length: 12
+
+Organisation
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 34
+
+20140526T180608:635367243688367455
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+c4615101-1a86-4117-b275-c2ea7f55d10f
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20140526T180608:635367243688367455
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----version----
+language: de-DE
+version: 1
+revision: 431313ec-d527-407c-b900-39aa8dbdea28
+
+----field----
+field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
+name: __Display name
+key: __display name
+content-length: 12
+
+Organisation
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 34
+
+20140526T181643:635367250035520086
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+431313ec-d527-407c-b900-39aa8dbdea28
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20140526T181643:635367250035520086
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----version----
+language: en
+version: 1
+revision: b45e4720-d9c7-4ff3-9bc5-16f7ac0ae0af
+
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 15
+
+20110211T145542
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+b45e4720-d9c7-4ff3-9bc5-16f7ac0ae0af
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20120217T120826:634650773064645003
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----version----
+language: ja-JP
+version: 1
+revision: 08dd8c27-e29b-46ff-95d8-deddb2555839
+
+----field----
+field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
+name: __Display name
+key: __display name
+content-length: 2
+
+組織
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 34
+
+20140526T182835:635367257159673816
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+08dd8c27-e29b-46ff-95d8-deddb2555839
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20140526T182835:635367257159673816
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin

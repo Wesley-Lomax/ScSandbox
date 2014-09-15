@@ -1,0 +1,269 @@
+----item----
+version: 1
+id: {C8740BD3-7A4D-45D8-8792-1E55B4BF6F4C}
+database: core
+path: /sitecore/content/Applications/WebEdit/Ribbons/WebEdit/Advanced/Analyze
+parent: {D8435A48-8B51-4FCD-9D68-F71FB9D681FB}
+name: Analyze
+master: {00000000-0000-0000-0000-000000000000}
+template: {8F3D8F9B-2D76-4ACE-803F-35415D2B230A}
+templatekey: Chunk
+
+----field----
+field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
+name: __Sortorder
+key: __sortorder
+content-length: 1
+
+0
+----version----
+language: da
+version: 1
+revision: 3780f121-3fa6-4eaa-9da1-dfba305ff4a0
+
+----field----
+field: {C95D21BD-66C3-444B-A37F-D346CBAF2B55}
+name: Header
+key: header
+content-length: 8
+
+Analyser
+----field----
+field: {4061C1C7-DC71-4C1D-932D-22FD5A37ADAC}
+name: Tooltip
+key: tooltip
+content-length: 19
+
+Indholdsprofilering
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 34
+
+20140526T175951:635367239917171969
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+3780f121-3fa6-4eaa-9da1-dfba305ff4a0
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20140526T175951:635367239917328219
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----version----
+language: de-DE
+version: 1
+revision: e7be5317-9b55-406e-b256-9694d178533a
+
+----field----
+field: {C95D21BD-66C3-444B-A37F-D346CBAF2B55}
+name: Header
+key: header
+content-length: 11
+
+Analysieren
+----field----
+field: {4061C1C7-DC71-4C1D-932D-22FD5A37ADAC}
+name: Tooltip
+key: tooltip
+content-length: 17
+
+Content Profiling
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 34
+
+20140526T181158:635367247186143589
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+e7be5317-9b55-406e-b256-9694d178533a
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20140526T181158:635367247186299835
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----version----
+language: en
+version: 1
+revision: 1f1272de-b7df-4d5b-9949-25f0c123ee14
+
+----field----
+field: {C95D21BD-66C3-444B-A37F-D346CBAF2B55}
+name: Header
+key: header
+content-length: 7
+
+Analyze
+----field----
+field: {4061C1C7-DC71-4C1D-932D-22FD5A37ADAC}
+name: Tooltip
+key: tooltip
+content-length: 17
+
+Content Profiling
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 15
+
+20080215T101822
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+1f1272de-b7df-4d5b-9949-25f0c123ee14
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20100701T203937:634136135777933461
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----version----
+language: ja-JP
+version: 1
+revision: 2aad34d4-0023-4580-9a28-a8546fcfaf4f
+
+----field----
+field: {C95D21BD-66C3-444B-A37F-D346CBAF2B55}
+name: Header
+key: header
+content-length: 7
+
+アナリティクス
+----field----
+field: {4061C1C7-DC71-4C1D-932D-22FD5A37ADAC}
+name: Tooltip
+key: tooltip
+content-length: 14
+
+コンテンツ プロファイリング
+----field----
+field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
+name: __Display name
+key: __display name
+content-length: 7
+
+アナリティクス
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 34
+
+20140526T182220:635367253402514369
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+2aad34d4-0023-4580-9a28-a8546fcfaf4f
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20140526T182220:635367253403764345
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin

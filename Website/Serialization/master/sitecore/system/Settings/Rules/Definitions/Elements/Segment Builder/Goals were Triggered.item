@@ -1,0 +1,255 @@
+----item----
+version: 1
+id: {601448D3-23D4-4C4C-A0FE-E92CA2CA9F6E}
+database: master
+path: /sitecore/system/Settings/Rules/Definitions/Elements/Segment Builder/Goals were Triggered
+parent: {2562A247-05A4-463C-8B8D-80050F139693}
+name: Goals were Triggered
+master: {00000000-0000-0000-0000-000000000000}
+template: {F0D16EEE-3A05-4E43-A082-795A32B873C0}
+templatekey: Condition
+
+----field----
+field: {AB51C8B2-F0E1-4471-9AAE-CC080D774923}
+name: Type
+key: type
+content-length: 93
+
+ Sitecore.Analytics.Rules.SegmentBuilder.Conditions.HasGoalsCondition,Sitecore.SegmentBuilder
+----version----
+language: da
+version: 1
+revision: dc3324b9-4862-4718-902b-63e46447c4c5
+
+----field----
+field: {AF321234-4EB9-4EF5-9197-65903351939C}
+name: Text
+key: text
+content-length: 212
+
+hvor den besøgende har udløst målene [GoalIds,Treelist,root=/sitecore/system/Marketing Center/Goals&selection={475E9026-333F-432D-A4DC-52E03B75CB6B}|{059CFBDF-49FC-4F14-A4E5-B63E1E1AFB1E},specific] mindst én gang
+----field----
+field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
+name: __Display name
+key: __display name
+content-length: 17
+
+Har målbetingelse
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 34
+
+20130917T032440:635149850804783754
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+dc3324b9-4862-4718-902b-63e46447c4c5
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20140526T180338:635367242185412202
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----version----
+language: de-DE
+version: 1
+revision: d49c3808-4a2d-4a92-8d94-d6cf560c7fdc
+
+----field----
+field: {AF321234-4EB9-4EF5-9197-65903351939C}
+name: Text
+key: text
+content-length: 222
+
+wo der Besucher die [GoalIds,Treelist,root=/sitecore/system/Marketing Center/Goals&selection={475E9026-333F-432D-A4DC-52E03B75CB6B}|{059CFBDF-49FC-4F14-A4E5-B63E1E1AFB1E},spezifischen] Ziele mindestens einmal ausgelöst hat
+----field----
+field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
+name: __Display name
+key: __display name
+content-length: 19
+
+hat Zielbedingungen
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 34
+
+20130917T035425:635149868650091946
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+d49c3808-4a2d-4a92-8d94-d6cf560c7fdc
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20140526T181450:635367248909107959
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----version----
+language: en
+version: 1
+revision: 31400c83-369c-4caa-8e4b-7df3a8dfb9c8
+
+----field----
+field: {AF321234-4EB9-4EF5-9197-65903351939C}
+name: Text
+key: text
+content-length: 216
+
+where the [GoalIds,Treelist,root=/sitecore/system/Marketing Center/Goals&selection={475E9026-333F-432D-A4DC-52E03B75CB6B}|{059CFBDF-49FC-4F14-A4E5-B63E1E1AFB1E},specific] goals were triggered by visitor at least once
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 15
+
+20090202T181635
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+31400c83-369c-4caa-8e4b-7df3a8dfb9c8
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20130906T165838:635140835181952767
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----version----
+language: ja-JP
+version: 1
+revision: 03f0f307-0793-4620-aa4e-7a2dca069ae8
+
+----field----
+field: {AF321234-4EB9-4EF5-9197-65903351939C}
+name: Text
+key: text
+content-length: 188
+
+条件： （ゴール） ビジターが一回以上 [GoalIds,Treelist,root=/sitecore/system/Marketing Center/Goals&selection={475E9026-333F-432D-A4DC-52E03B75CB6B}|{059CFBDF-49FC-4F14-A4E5-B63E1E1AFB1E},特定の] ゴールをトリガーした場合
+----field----
+field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
+name: __Display name
+key: __display name
+content-length: 7
+
+ゴール条件あり
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 34
+
+20130917T042455:635149886950317718
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+03f0f307-0793-4620-aa4e-7a2dca069ae8
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20140526T182611:635367255716090569
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin

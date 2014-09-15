@@ -1,0 +1,255 @@
+----item----
+version: 1
+id: {7ECEDEF9-1299-4FC7-9521-57288A500571}
+database: core
+path: /sitecore/content/Applications/Media/File item viewer/Toolbar/Download
+parent: {FDA7C374-D694-47B9-9423-A311F6D134C2}
+name: Download
+master: {593DCA58-5A88-4464-B2C9-A63DD5CE39A4}
+template: {79E55CB1-FDB0-460A-AB97-B629069F15DA}
+templatekey: Toolbutton
+
+----field----
+field: {95DCE7F7-107B-4E53-BE87-F16E707A5D3F}
+name: Click
+key: click
+content-length: 8
+
+Download
+----field----
+field: {0A9EC22E-C3C1-42E4-875D-C31AEAF28216}
+name: Icon
+key: icon
+content-length: 30
+
+Applications/24x24/import1.png
+----field----
+field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
+name: __Sortorder
+key: __sortorder
+content-length: 2
+
+30
+----version----
+language: da
+version: 1
+revision: ee68f318-1d06-467f-9185-cc598276bbbb
+
+----field----
+field: {0243B5CA-1A92-4093-9EAD-B4F7B8AD2594}
+name: Header
+key: header
+content-length: 12
+
+Download fil
+----field----
+field: {49B67F65-B00E-47E4-AE41-04ED250BD614}
+name: Tool tip
+key: tool tip
+content-length: 12
+
+Download fil
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 34
+
+20140526T180228:635367241486668768
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+ee68f318-1d06-467f-9185-cc598276bbbb
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20140526T180228:635367241486825016
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----version----
+language: de-DE
+version: 1
+revision: 558d991e-a59e-4cf6-bec5-092e2b5c92ad
+
+----field----
+field: {0243B5CA-1A92-4093-9EAD-B4F7B8AD2594}
+name: Header
+key: header
+content-length: 13
+
+Herunterladen
+----field----
+field: {49B67F65-B00E-47E4-AE41-04ED250BD614}
+name: Tool tip
+key: tool tip
+content-length: 13
+
+Herunterladen
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 34
+
+20140526T181354:635367248340210484
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+558d991e-a59e-4cf6-bec5-092e2b5c92ad
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20140526T181354:635367248340366731
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----version----
+language: en
+version: 1
+revision: D297B5F4-9F56-49DD-9764-16981FA12A8D
+
+----field----
+field: {0243B5CA-1A92-4093-9EAD-B4F7B8AD2594}
+name: Header
+key: header
+content-length: 13
+
+Download file
+----field----
+field: {49B67F65-B00E-47E4-AE41-04ED250BD614}
+name: Tool tip
+key: tool tip
+content-length: 13
+
+Download file
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+D297B5F4-9F56-49DD-9764-16981FA12A8D
+----version----
+language: ja-JP
+version: 1
+revision: f501c5d3-c36b-4ae3-8e3d-ef64595d4361
+
+----field----
+field: {0243B5CA-1A92-4093-9EAD-B4F7B8AD2594}
+name: Header
+key: header
+content-length: 11
+
+ダウンロード ファイル
+----field----
+field: {49B67F65-B00E-47E4-AE41-04ED250BD614}
+name: Tool tip
+key: tool tip
+content-length: 11
+
+ダウンロード ファイル
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 34
+
+20140526T182516:635367255168759425
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+f501c5d3-c36b-4ae3-8e3d-ef64595d4361
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20140526T182516:635367255169228178
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin

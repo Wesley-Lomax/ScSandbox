@@ -1,0 +1,271 @@
+----item----
+version: 1
+id: {89849AEE-8C65-4FE0-A837-6CB60F32F4BB}
+database: master
+path: /sitecore/system/Settings/Analytics/Reports SQL Queries/Latest Visits with Failure
+parent: {DAA53CA5-8136-462F-8B2A-F66365BE1238}
+name: Latest Visits with Failure
+master: {00000000-0000-0000-0000-000000000000}
+template: {A90F48C4-4D4F-41D7-8497-070A9A50304E}
+templatekey: ReportQuery
+
+----field----
+field: {A61CC636-3272-4FB6-BCF9-762940047A78}
+name: SqlServer
+key: sqlserver
+content-length: 662
+
+select top 5
+	[Visits].[VisitId],
+	[Visits].[StartDateTime]
+from	[Pages], 
+	[Visits],
+	[PageEventDefinitions],
+	[PageEvents]
+where 			
+	[Pages].[VisitId] = [Visits].[VisitId]
+	AND [PageEvents].[PageId] = [Pages].[PageId]
+	AND [PageEventDefinitions].[PageEventDefinitionId] = @PageEventDefinitionIdObject
+	AND [PageEventDefinitions].[PageEventDefinitionId] = [PageEvents].[PageEventDefinitionId]
+	AND [PageEventDefinitions].[IsFailure] = 1 
+	AND [PageEventDefinitions].[IsSystem] = 0
+	AND [Visits].[StartDateTime] BETWEEN @StartDate AND @EndDate
+group by 
+ 	  	[Visits].[VisitId],
+	[Visits].[StartDateTime]
+order by [Visits].[StartDateTime] desc
+----field----
+field: {E6A8E2B9-2111-40A2-B4AC-88A607E68307}
+name: Oracle
+key: oracle
+content-length: 693
+
+SELECT * FROM (select 
+	"VISITS"."VISITID",
+	"VISITS"."STARTDATETIME"
+from	"PAGES", 
+	"VISITS",
+	"PAGEEVENTDEFINITIONS",
+	"PAGEEVENTS"
+where 			
+	"PAGES"."VISITID" = "VISITS"."VISITID"
+	AND "PAGEEVENTS"."PAGEID" = "PAGES"."PAGEID"
+	AND "PAGEEVENTDEFINITIONS"."PAGEEVENTDEFINITIONID" = :PageEventDefinitionIdObject
+	AND "PAGEEVENTDEFINITIONS"."PAGEEVENTDEFINITIONID" = "PAGEEVENTS"."PAGEEVENTDEFINITIONID"
+	AND "PAGEEVENTDEFINITIONS"."ISFAILURE" = 1 
+	AND "PAGEEVENTDEFINITIONS"."ISSYSTEM" = 0
+	AND "VISITS"."STARTDATETIME" BETWEEN :StartDate AND :EndDate
+group by 
+ 	  	"VISITS"."VISITID",
+	"VISITS"."STARTDATETIME"
+order by "VISITS"."STARTDATETIME" desc) WHERE ROWNUM <= 5
+
+----version----
+language: da
+version: 1
+revision: 5aadedd8-f80f-44df-9eb3-da0c15249904
+
+----field----
+field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
+name: __Display name
+key: __display name
+content-length: 24
+
+Seneste mislykkede besøg
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 34
+
+20140526T180453:635367242938992275
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+5aadedd8-f80f-44df-9eb3-da0c15249904
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20140526T180453:635367242938992275
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----version----
+language: de-DE
+version: 1
+revision: 5212e7f5-59b3-4669-bbb5-e5accdbfa9f5
+
+----field----
+field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
+name: __Display name
+key: __display name
+content-length: 29
+
+Neueste Besuche mit Ausfällen
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 34
+
+20140526T181554:635367249543485687
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+5212e7f5-59b3-4669-bbb5-e5accdbfa9f5
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20140526T181554:635367249543485687
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----version----
+language: en
+version: 1
+revision: 5d95f503-e889-4aa4-9e61-4da39a3efc9d
+
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 15
+
+20110412T130141
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+5d95f503-e889-4aa4-9e61-4da39a3efc9d
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20111213T023111:634593402715023416
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----version----
+language: ja-JP
+version: 1
+revision: 26828864-8498-4df0-a184-6808a46d1d5c
+
+----field----
+field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
+name: __Display name
+key: __display name
+content-length: 13
+
+最新の訪問 (エラー発生)
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 34
+
+20140526T182732:635367256524370263
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+26828864-8498-4df0-a184-6808a46d1d5c
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20140526T182732:635367256524370263
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin

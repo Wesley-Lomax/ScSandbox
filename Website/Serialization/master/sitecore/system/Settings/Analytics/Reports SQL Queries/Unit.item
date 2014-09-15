@@ -1,0 +1,280 @@
+----item----
+version: 1
+id: {0338600C-48D9-434B-A0C4-F2162C0EB75C}
+database: master
+path: /sitecore/system/Settings/Analytics/Reports SQL Queries/Unit
+parent: {DAA53CA5-8136-462F-8B2A-F66365BE1238}
+name: Unit
+master: {00000000-0000-0000-0000-000000000000}
+template: {A90F48C4-4D4F-41D7-8497-070A9A50304E}
+templatekey: ReportQuery
+
+----field----
+field: {A61CC636-3272-4FB6-BCF9-762940047A78}
+name: SqlServer
+key: sqlserver
+content-length: 747
+
+select 		[Locations].[LocationId],								
+			[Region] as [Unit],
+			[Locations].[Country],	
+			[Locations].[BusinessName],						
+			MAX([StartDateTime]) as [Recency],
+			MIN([StartDateTime]) as [OldDate],									
+			SUM([Value]) as [TotalValue],		
+			COUNT([VisitId]) as [TotalVisits],		
+			COUNT(distinct [VisitorId]) as [TotalVisitors]													
+				from 
+			[Visits],
+			[Locations]
+				where 					
+			[Visits].[LocationId] = [Locations].[LocationId]
+			AND	[Locations].[LocationId] = @LocationId	
+			AND [Visits].[Region] = @Region																
+				group by 										
+			[Locations].[LocationId],
+			[Locations].[Country],	
+			[Locations].[BusinessName],					
+			[Region]		
+				order by 
+			[TotalValue] desc		
+
+----field----
+field: {E6A8E2B9-2111-40A2-B4AC-88A607E68307}
+name: Oracle
+key: oracle
+content-length: 747
+
+select 		"LOCATIONS"."LOCATIONID",								
+			"REGION" as "UNIT",
+			"LOCATIONS"."COUNTRY",	
+			"LOCATIONS"."BUSINESSNAME",						
+			MAX("STARTDATETIME") as "RECENCY",
+			MIN("STARTDATETIME") as "OLDDATE",									
+			SUM("VALUE") as "TOTALVALUE",		
+			COUNT("VISITID") as "TOTALVISITS",		
+			COUNT(distinct "VISITORID") as "TOTALVISITORS"													
+				from 
+			"VISITS",
+			"LOCATIONS"
+				where 					
+			"VISITS"."LOCATIONID" = "LOCATIONS"."LOCATIONID"
+			AND	"LOCATIONS"."LOCATIONID" = :LocationId	
+			AND "VISITS"."REGION" = :Region																
+				group by 										
+			"LOCATIONS"."LOCATIONID",
+			"LOCATIONS"."COUNTRY",	
+			"LOCATIONS"."BUSINESSNAME",					
+			"REGION"		
+				order by 
+			"TOTALVALUE" desc		
+
+----version----
+language: da
+version: 1
+revision: 1be72c19-aff9-449e-9e2f-4bdf2f6b6f7f
+
+----field----
+field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
+name: __Display name
+key: __display name
+content-length: 5
+
+Enhed
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 34
+
+20140526T180947:635367245874746879
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+1be72c19-aff9-449e-9e2f-4bdf2f6b6f7f
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20140526T180947:635367245874746879
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----version----
+language: de-DE
+version: 1
+revision: d96eb18a-756d-4d75-b824-1113249bb9d2
+
+----field----
+field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
+name: __Display name
+key: __display name
+content-length: 7
+
+Einheit
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 34
+
+20140526T182002:635367252024403367
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+d96eb18a-756d-4d75-b824-1113249bb9d2
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20140526T182002:635367252024403367
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----version----
+language: en
+version: 1
+revision: 69344437-8795-4e83-a95b-94c4d9c5846c
+
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 15
+
+20110211T150520
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+69344437-8795-4e83-a95b-94c4d9c5846c
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20111213T023113:634593402736705584
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----version----
+language: ja-JP
+version: 1
+revision: fcebda27-f909-44fa-a418-49dba7800a2d
+
+----field----
+field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
+name: __Display name
+key: __display name
+content-length: 4
+
+ユニット
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 34
+
+20140526T183259:635367259794965085
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+fcebda27-f909-44fa-a418-49dba7800a2d
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20140526T183259:635367259794965085
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin

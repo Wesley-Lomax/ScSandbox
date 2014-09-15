@@ -1,0 +1,273 @@
+----item----
+version: 1
+id: {6ED9C6C6-5628-40A8-B389-25FCB87B1F69}
+database: master
+path: /sitecore/system/Settings/Analytics/Reports SQL Queries/Not Found Urls Previous Referrers
+parent: {DAA53CA5-8136-462F-8B2A-F66365BE1238}
+name: Not Found Urls Previous Referrers
+master: {00000000-0000-0000-0000-000000000000}
+template: {A90F48C4-4D4F-41D7-8497-070A9A50304E}
+templatekey: ReportQuery
+
+----field----
+field: {A61CC636-3272-4FB6-BCF9-762940047A78}
+name: SqlServer
+key: sqlserver
+content-length: 565
+
+select	top 25
+		[ReferringSites].[Host] as [Referrer],
+		CAST([Keywords].[Text] as [nvarchar](100)) as [Keywords],
+		COUNT([ReferringSites].[Host]) as [ReferrerTotal]
+from 
+		[Pages],
+		[Visits],
+		[ReferringSites],
+		[Keywords]
+where
+		[Pages].[VisitId] = [Visits].[VisitId]		
+		AND [Visits].[ReferringSiteId] = [ReferringSites].[ReferringSiteId]
+		AND [Visits].[KeywordsId] = [Keywords].[KeywordsId]
+		AND [Pages].[Url] = @PageUrl
+group by
+		[ReferringSites].[Host],
+		CAST([Keywords].[Text] as [nvarchar](100))
+order by
+		[ReferrerTotal] desc
+
+----field----
+field: {E6A8E2B9-2111-40A2-B4AC-88A607E68307}
+name: Oracle
+key: oracle
+content-length: 594
+
+SELECT * FROM (select	
+		"REFERRINGSITES"."HOST" as "REFERRER",
+		CAST("KEYWORDS"."TEXT" as NVARCHAR2(100)) as "KEYWORDS",
+		COUNT("REFERRINGSITES"."HOST") as "REFERRERTOTAL"
+from 
+		"PAGES",
+		"VISITS",
+		"REFERRINGSITES",
+		"KEYWORDS"
+where
+		"PAGES"."VISITID" = "VISITS"."VISITID"		
+		AND "VISITS"."REFERRINGSITEID" = "REFERRINGSITES"."REFERRINGSITEID"
+		AND "VISITS"."KEYWORDSID" = "KEYWORDS"."KEYWORDSID"
+		AND "PAGES"."URL" = :PageUrl
+group by
+		"REFERRINGSITES"."HOST",
+		CAST("KEYWORDS"."TEXT" as NVARCHAR2(100))
+order by
+		"REFERRERTOTAL" desc
+) WHERE ROWNUM <= 25
+
+----version----
+language: da
+version: 1
+revision: 109f8d94-fd05-42c5-b38b-3f24b3c6374e
+
+----field----
+field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
+name: __Display name
+key: __display name
+content-length: 42
+
+Ikke fundne URL'er fra tidligere henvisere
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 34
+
+20140526T180556:635367243564616951
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+109f8d94-fd05-42c5-b38b-3f24b3c6374e
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20140526T180556:635367243564616951
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----version----
+language: de-DE
+version: 1
+revision: 8b0d72a6-f852-4c5a-970d-81ed2c4c7012
+
+----field----
+field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
+name: __Display name
+key: __display name
+content-length: 47
+
+Nicht gefundene Urls Vorhergehende Verweisungen
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 34
+
+20140526T181634:635367249949582036
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+8b0d72a6-f852-4c5a-970d-81ed2c4c7012
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20140526T181634:635367249949582036
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----version----
+language: en
+version: 1
+revision: 03493298-a073-425c-80ce-3d5ec96508b6
+
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 15
+
+20110412T163644
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+03493298-a073-425c-80ce-3d5ec96508b6
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20111213T023111:634593402716923606
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----version----
+language: ja-JP
+version: 1
+revision: e41d808d-7a68-41b1-92f6-697d067cec06
+
+----field----
+field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
+name: __Display name
+key: __display name
+content-length: 32
+
+ページが見つからないエラーが報告された URL (直前の参照元)
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 34
+
+20140526T182824:635367257040612033
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+e41d808d-7a68-41b1-92f6-697d067cec06
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20140526T182824:635367257040612033
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin

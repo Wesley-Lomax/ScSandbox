@@ -1,0 +1,321 @@
+----item----
+version: 1
+id: {77041299-9990-49B7-8AC6-E82C6F85C6DD}
+database: master
+path: /sitecore/system/Settings/Analytics/Dashboard Reports/Campaigns Categories/Campaign Site Search
+parent: {5EDD5CDF-B339-4B7C-95A2-B436402F385E}
+name: Campaign Site Search
+master: {00000000-0000-0000-0000-000000000000}
+template: {F960E028-5373-48BF-B3B3-9B23FE13C0C4}
+templatekey: Dashboard Report
+
+----field----
+field: {49FA57D8-E607-49F5-BB07-981B8FE5E005}
+name: Report Name
+key: report name
+content-length: 18
+
+CampaignSiteSearch
+----field----
+field: {46FB3CB4-4740-4680-BB76-63A15EF25907}
+name: SqlServer
+key: sqlserver
+content-length: 913
+
+select 
+	[Month] as [Date],
+	COUNT(*) as [Visits],
+	SUM([Value]) as [Value],
+	[DataKey] as [FacetName]
+from
+(select V.[Date]
+      ,V.[Month]
+      ,V.[TrafficType]
+      ,V.[CampaignId]
+      ,V.[VisitId]
+      ,V.[PageEventDefinitionId]
+      ,V.[PageEventName]
+      ,V.[DataKey]
+      ,V.[Value]
+      ,V.[IsGoal]
+      ,V.[NumberOfEvents]
+      ,V.[Multisite]
+      ,V.[Language]
+      ,C.[CampaignName]
+      ,C.[Category1Id]
+      ,C.[Category2Id]
+      ,C.[Category3Id]
+  from [VisitEventsByDataKey] V, [Campaigns] C 
+  where
+    V.[CampaignId] = C.[CampaignId]
+    and [IsGoal] = 0
+	  and [DataKey] > ' '
+	  and V.[CampaignId] is not null
+	  and [PageEventDefinitionId] in 
+	   ('632525ef-985b-44c5-bd29-353634c99c64', '0c179613-2073-41ab-992e-027d03d523bf')
+  ) DV
+where 
+  1 = 1
+	{Filters}
+group by
+	[Month], [DataKey]
+having
+  SUM([Value]) > 0
+order by
+	[Month]
+----field----
+field: {A9C8D7C7-A170-4305-A40F-DF6CF543C007}
+name: Oracle
+key: oracle
+content-length: 913
+
+select 
+	"MONTH" as "DATE",
+	COUNT(*) as "VISITS",
+	SUM("VALUE") as "VALUE",
+	"DATAKEY" as "FACETNAME"
+from
+(select V."DATE"
+      ,V."MONTH"
+      ,V."TRAFFICTYPE"
+      ,V."CAMPAIGNID"
+      ,V."VISITID"
+      ,V."PAGEEVENTDEFINITIONID"
+      ,V."PAGEEVENTNAME"
+      ,V."DATAKEY"
+      ,V."VALUE"
+      ,V."ISGOAL"
+      ,V."NUMBEROFEVENTS"
+      ,V."MULTISITE"
+      ,V."LANGUAGE"
+      ,C."CAMPAIGNNAME"
+      ,C."CATEGORY1ID"
+      ,C."CATEGORY2ID"
+      ,C."CATEGORY3ID"
+  from "VISITEVENTSBYDATAKEY" V, "CAMPAIGNS" C 
+  where
+    V."CAMPAIGNID" = C."CAMPAIGNID"
+    and "ISGOAL" = 0
+	  and "DATAKEY" > ' '
+	  and V."CAMPAIGNID" is not null
+	  and "PAGEEVENTDEFINITIONID" in 
+	   ('632525ef-985b-44c5-bd29-353634c99c64', '0c179613-2073-41ab-992e-027d03d523bf')
+  ) DV
+where 
+  1 = 1
+	{Filters}
+group by
+	"MONTH", "DATAKEY"
+having
+  SUM("VALUE") > 0
+order by
+	"MONTH"
+----version----
+language: da
+version: 1
+revision: b31d2c4f-e382-4462-8a35-bb18ca8988b5
+
+----field----
+field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
+name: __Display name
+key: __display name
+content-length: 29
+
+Søgning på kampagnehjemmeside
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 34
+
+20140526T180034:635367240346854153
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+b31d2c4f-e382-4462-8a35-bb18ca8988b5
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20140526T180034:635367240346854153
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----version----
+language: de-DE
+version: 1
+revision: 373fa8be-718c-47b6-9c65-4dc10b5db871
+
+----field----
+field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
+name: __Display name
+key: __display name
+content-length: 20
+
+Kampagne Seitensuche
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 34
+
+20140526T181243:635367247630828757
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+373fa8be-718c-47b6-9c65-4dc10b5db871
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20140526T181243:635367247630828757
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----version----
+language: en
+version: 1
+revision: c62e5d66-e230-41e7-962c-58c8ee596e1f
+
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 15
+
+20101213T141800
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+c62e5d66-e230-41e7-962c-58c8ee596e1f
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20120725T113934:634788131747829873
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----version----
+language: ja-JP
+version: 1
+revision: bd583a4b-f666-46ec-9ad8-9a4ec659975d
+
+----field----
+field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
+name: __Display name
+key: __display name
+content-length: 13
+
+キャンペーン サイトの検索
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 34
+
+20140526T182257:635367253775011655
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+bd583a4b-f666-46ec-9ad8-9a4ec659975d
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20140526T182257:635367253775011655
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin

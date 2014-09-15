@@ -1,0 +1,304 @@
+----item----
+version: 1
+id: {D3DA2BA9-683F-445B-B43C-045AA00372A7}
+database: core
+path: /sitecore/content/Applications/WebEdit/Ribbons/WebEdit/Experience/Simulator/Select Simulator
+parent: {B83F76CB-23A2-4FBD-BF58-FCCCA5CA5AE9}
+name: Select Simulator
+master: {00000000-0000-0000-0000-000000000000}
+template: {19054D88-FED7-48AD-87CD-CF458590C303}
+templatekey: Large Gallery Button
+
+----field----
+field: {E792E033-3264-4F34-BEBF-B2BD82B0FC5A}
+name: Icon
+key: icon
+content-length: 27
+
+peoplev2/32x32/lollipop.png
+----field----
+field: {B6D7D860-0ABA-49DD-85D5-4D537646EF7F}
+name: Command
+key: command
+content-length: 29
+
+webedit:selectdevicesimulator
+----field----
+field: {9383F6DD-2D09-40A4-8004-4F63125DBDF6}
+name: Gallery
+key: gallery
+content-length: 24
+
+Gallery.DeviceSimulators
+----field----
+field: {0A734AF1-CBD3-4896-8615-6374D2D5DCEE}
+name: Gallery Width
+key: gallery width
+content-length: 3
+
+660
+----field----
+field: {C13FE317-1F69-42D1-B8EF-EE783D372926}
+name: Gallery Height
+key: gallery height
+content-length: 3
+
+380
+----field----
+field: {34E35181-9D95-4344-B5CF-EE333C37F5A7}
+name: ID
+key: id
+content-length: 15
+
+SelectSimulator
+----field----
+field: {06D5295C-ED2F-4A54-9BF2-26228D113318}
+name: __Icon
+key: __icon
+content-length: 31
+
+applications/32x32/document.png
+----version----
+language: da
+version: 1
+revision: cd9983fb-b315-4d9f-8aa6-8f76f4ca7f55
+
+----field----
+field: {2AC65C2F-127B-43BC-8687-5689E1FB3D78}
+name: Header
+key: header
+content-length: 14
+
+Vælg simulator
+----field----
+field: {81B23074-63AF-4A28-9B45-AB27B3B2F619}
+name: Tooltip
+key: tooltip
+content-length: 21
+
+Vælg enhedssimulator.
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 34
+
+20140526T180742:635367244624297143
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+cd9983fb-b315-4d9f-8aa6-8f76f4ca7f55
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20140526T180742:635367244624453391
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----version----
+language: de-DE
+version: 1
+revision: 02b0d329-430f-4443-b769-26f26e4b4867
+
+----field----
+field: {2AC65C2F-127B-43BC-8687-5689E1FB3D78}
+name: Header
+key: header
+content-length: 19
+
+Simulator auswählen
+----field----
+field: {81B23074-63AF-4A28-9B45-AB27B3B2F619}
+name: Tooltip
+key: tooltip
+content-length: 27
+
+Geräte-Simulator auswählen.
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 34
+
+20140526T181824:635367251040506990
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+02b0d329-430f-4443-b769-26f26e4b4867
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20140526T181824:635367251040506990
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----version----
+language: en
+version: 1
+revision: 02fca1bc-d8f3-4839-befd-91b1a053dc3a
+
+----field----
+field: {2AC65C2F-127B-43BC-8687-5689E1FB3D78}
+name: Header
+key: header
+content-length: 16
+
+Select Simulator
+----field----
+field: {81B23074-63AF-4A28-9B45-AB27B3B2F619}
+name: Tooltip
+key: tooltip
+content-length: 24
+
+Select Device Simulator.
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 15
+
+20110808T145800
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+02fca1bc-d8f3-4839-befd-91b1a053dc3a
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20110914T121600:634515993607315936
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----version----
+language: ja-JP
+version: 1
+revision: fc1a96a5-c448-43ed-a547-c72536795e18
+
+----field----
+field: {2AC65C2F-127B-43BC-8687-5689E1FB3D78}
+name: Header
+key: header
+content-length: 10
+
+シミュレーターを選択
+----field----
+field: {81B23074-63AF-4A28-9B45-AB27B3B2F619}
+name: Tooltip
+key: tooltip
+content-length: 18
+
+デバイス シミュレーターを選択します
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 34
+
+20140526T183044:635367258447944879
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+fc1a96a5-c448-43ed-a547-c72536795e18
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20140526T183044:635367258447944879
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin

@@ -1,0 +1,65 @@
+----item----
+version: 1
+id: {68633D08-07EA-4261-872F-821968CB41CC}
+database: core
+path: /sitecore/content/Applications/Files/FileExplorer/Toolbar 1/View/Views/Views
+parent: {E08D85B8-47AB-4CAB-96F1-438FA595FCDA}
+name: Views
+master: {00000000-0000-0000-0000-000000000000}
+template: {998B965E-6AB8-4568-810F-8101D60D0CC3}
+templatekey: Menu item
+
+----version----
+language: ja-JP
+version: 1
+revision: 45769bff-97c3-4b64-879c-9e5a79088700
+
+----field----
+field: {9B72A62B-2775-423D-B17A-EC34A9F31AF8}
+name: Display name
+key: display name
+content-length: 2
+
+表示
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 34
+
+20140526T183324:635367260046995078
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+45769bff-97c3-4b64-879c-9e5a79088700
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20140526T183324:635367260046995078
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin

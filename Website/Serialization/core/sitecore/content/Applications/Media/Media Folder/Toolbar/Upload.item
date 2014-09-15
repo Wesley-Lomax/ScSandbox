@@ -1,0 +1,269 @@
+----item----
+version: 1
+id: {F0601525-D947-43D5-947A-5C5D0FA78B36}
+database: core
+path: /sitecore/content/Applications/Media/Media Folder/Toolbar/Upload
+parent: {23D6E251-7EC9-4003-8818-B1D676F3C22F}
+name: Upload
+master: {593DCA58-5A88-4464-B2C9-A63DD5CE39A4}
+template: {79E55CB1-FDB0-460A-AB97-B629069F15DA}
+templatekey: Toolbutton
+
+----field----
+field: {95DCE7F7-107B-4E53-BE87-F16E707A5D3F}
+name: Click
+key: click
+content-length: 6
+
+Upload
+----field----
+field: {0A9EC22E-C3C1-42E4-875D-C31AEAF28216}
+name: Icon
+key: icon
+content-length: 30
+
+Applications/24x24/export1.png
+----field----
+field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
+name: __Sortorder
+key: __sortorder
+content-length: 2
+
+20
+----version----
+language: da
+version: 1
+revision: 05c54aa8-a848-488c-a1c0-46d0c3238603
+
+----field----
+field: {0243B5CA-1A92-4093-9EAD-B4F7B8AD2594}
+name: Header
+key: header
+content-length: 10
+
+Upload fil
+----field----
+field: {49B67F65-B00E-47E4-AE41-04ED250BD614}
+name: Tool tip
+key: tool tip
+content-length: 26
+
+Upload en fil til serveren
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 34
+
+20140526T180952:635367245924901448
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+05c54aa8-a848-488c-a1c0-46d0c3238603
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20140526T180952:635367245925370195
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----version----
+language: de-DE
+version: 1
+revision: b2e396e0-b735-4d89-84b1-94ce3e56e3fa
+
+----field----
+field: {0243B5CA-1A92-4093-9EAD-B4F7B8AD2594}
+name: Header
+key: header
+content-length: 15
+
+Datei hochladen
+----field----
+field: {49B67F65-B00E-47E4-AE41-04ED250BD614}
+name: Tool tip
+key: tool tip
+content-length: 30
+
+Datei auf den Server hochladen
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 34
+
+20140526T182010:635367252102838859
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+b2e396e0-b735-4d89-84b1-94ce3e56e3fa
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20140526T182010:635367252103151351
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----version----
+language: en
+version: 1
+revision: 7c99bac5-47ae-4d44-9f07-8a3fd4d10e35
+
+----field----
+field: {0243B5CA-1A92-4093-9EAD-B4F7B8AD2594}
+name: Header
+key: header
+content-length: 11
+
+Upload File
+----field----
+field: {49B67F65-B00E-47E4-AE41-04ED250BD614}
+name: Tool tip
+key: tool tip
+content-length: 27
+
+Upload a file to the server
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+7c99bac5-47ae-4d44-9f07-8a3fd4d10e35
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 15
+
+20050519T095352
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 18
+
+sitecore\Anonymous
+----version----
+language: ja-JP
+version: 1
+revision: 13e361f7-cc85-47b3-98d2-27f69b32851a
+
+----field----
+field: {0243B5CA-1A92-4093-9EAD-B4F7B8AD2594}
+name: Header
+key: header
+content-length: 6
+
+アップロード
+----field----
+field: {49B67F65-B00E-47E4-AE41-04ED250BD614}
+name: Tool tip
+key: tool tip
+content-length: 19
+
+サーバーにファイルをアップロードします
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 34
+
+20140526T183304:635367259840745768
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+13e361f7-cc85-47b3-98d2-27f69b32851a
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20140526T183304:635367259841527013
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin

@@ -1,0 +1,277 @@
+----item----
+version: 1
+id: {42B304D6-F29B-4DCC-B0EE-C8A3CFC92E40}
+database: master
+path: /sitecore/system/Settings/Analytics/Reports SQL Queries/Slow Pages
+parent: {DAA53CA5-8136-462F-8B2A-F66365BE1238}
+name: Slow Pages
+master: {00000000-0000-0000-0000-000000000000}
+template: {A90F48C4-4D4F-41D7-8497-070A9A50304E}
+templatekey: ReportQuery
+
+----field----
+field: {A61CC636-3272-4FB6-BCF9-762940047A78}
+name: SqlServer
+key: sqlserver
+content-length: 606
+
+select	top 25	       
+		[Pages].[Url],
+		MAX([PageEvents].[Timestamp]) as [TimeTaken],
+		COUNT(*) as [FailCount]
+from 
+		[Pages], 
+		[PageEvents], 
+		[Visits], 
+		[PageEventDefinitions]
+where
+		[Pages].[VisitId] = [Visits].[VisitId]
+		AND [Pages].[PageId] = [PageEvents].[PageId]
+		AND [PageEventDefinitions].[PageEventDefinitionId] = [PageEvents].[PageEventDefinitionId]
+		AND [PageEventDefinitions].[PageEventDefinitionId] = 'dc6f6aff-6aa9-423f-a824-49f9ee741aa9'
+		AND [Visits].[StartDateTime] BETWEEN @StartDate AND @EndDate
+group by 
+		[Pages].[Url]
+order by
+		[FailCount] desc
+
+
+
+----field----
+field: {E6A8E2B9-2111-40A2-B4AC-88A607E68307}
+name: Oracle
+key: oracle
+content-length: 637
+
+SELECT * FROM (select		       
+		"PAGES"."URL",
+		MAX("PAGEEVENTS"."TIMESTAMP") as "TIMETAKEN",
+		COUNT(*) as "FAILCOUNT"
+from 
+		"PAGES", 
+		"PAGEEVENTS", 
+		"VISITS", 
+		"PAGEEVENTDEFINITIONS"
+where
+		"PAGES"."VISITID" = "VISITS"."VISITID"
+		AND "PAGES"."PAGEID" = "PAGEEVENTS"."PAGEID"
+		AND "PAGEEVENTDEFINITIONS"."PAGEEVENTDEFINITIONID" = "PAGEEVENTS"."PAGEEVENTDEFINITIONID"
+		AND "PAGEEVENTDEFINITIONS"."PAGEEVENTDEFINITIONID" = 'dc6f6aff-6aa9-423f-a824-49f9ee741aa9'
+		AND "VISITS"."STARTDATETIME" BETWEEN :StartDate AND :EndDate
+group by 
+		"PAGES"."URL"
+order by
+		"FAILCOUNT" desc
+
+
+) WHERE ROWNUM <= 25
+
+----version----
+language: da
+version: 1
+revision: 46edfe4b-ac59-46ed-9274-d92c8f67808f
+
+----field----
+field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
+name: __Display name
+key: __display name
+content-length: 15
+
+Langsomme sider
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 34
+
+20140526T180808:635367244888202220
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+46edfe4b-ac59-46ed-9274-d92c8f67808f
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20140526T180808:635367244888202220
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----version----
+language: de-DE
+version: 1
+revision: 7ca503f4-7403-4bad-a8c1-3ef30ea56945
+
+----field----
+field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
+name: __Display name
+key: __display name
+content-length: 15
+
+Langsame Seiten
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 34
+
+20140526T181847:635367251273629497
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+7ca503f4-7403-4bad-a8c1-3ef30ea56945
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20140526T181847:635367251273629497
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----version----
+language: en
+version: 1
+revision: 064ff907-c6a8-44fb-a555-a3d7368fe529
+
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 15
+
+20110413T150429
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+064ff907-c6a8-44fb-a555-a3d7368fe529
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20111213T023112:634593402723254239
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----version----
+language: ja-JP
+version: 1
+revision: 65678eea-39c5-4487-abc7-91d32f4fd5eb
+
+----field----
+field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
+name: __Display name
+key: __display name
+content-length: 14
+
+表示に時間が長くかかるページ
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 34
+
+20140526T183113:635367258737008733
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+65678eea-39c5-4487-abc7-91d32f4fd5eb
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20140526T183113:635367258737008733
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin

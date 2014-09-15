@@ -1,0 +1,275 @@
+----item----
+version: 1
+id: {34DEFD66-EC35-42FD-A2CC-CD56537E638D}
+database: master
+path: /sitecore/system/Settings/Analytics/Engagement Automation/Predefined items/Conditions/Is Email Opened
+parent: {84009799-C07F-4586-9E05-5D3F024C976A}
+name: Is Email Opened
+master: {00000000-0000-0000-0000-000000000000}
+template: {0A43A0FE-7E0E-49EF-95D4-E3DE34F4F175}
+templatekey: Engagement Plan Condition
+
+----field----
+field: {E13DCD09-D9BB-43C9-8D7D-438C79D714CA}
+name: Evaluate
+key: evaluate
+content-length: 38
+
+{B81C1F4C-8B83-44D9-902F-448463DBCCBC}
+----field----
+field: {21F3482B-BB14-4555-BA5D-AF20D400D5B9}
+name: Rule
+key: rule
+content-length: 228
+
+<ruleset>
+  <rule uid="{DF7C89C0-57C8-408B-BE78-840564723D6D}">
+    <conditions>
+      <condition id="{0D080B25-FC2E-4DE7-ABB5-B1F025A3C3BD}" uid="8405299B519A47008C469D5EBE557990" />
+    </conditions>
+  </rule>
+</ruleset>
+----version----
+language: da
+version: 1
+revision: 6889506f-f23b-43f3-a03d-b9e88c6a3e11
+
+----field----
+field: {06F2D72A-1924-4B9A-BA1E-186CE4E57EFD}
+name: Description
+key: description
+content-length: 98
+
+Sandt, hvis den besøgende har åbnet e-mailen i en e-maillæser, men ikke har klikket på noget link.
+----field----
+field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
+name: __Display name
+key: __display name
+content-length: 17
+
+Er e-mailen åbnet
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 34
+
+20140526T180426:635367242666496715
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+6889506f-f23b-43f3-a03d-b9e88c6a3e11
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20140526T180426:635367242668059185
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----version----
+language: de-DE
+version: 1
+revision: 760ec6a5-631f-430c-94be-3b7db96c26f5
+
+----field----
+field: {06F2D72A-1924-4B9A-BA1E-186CE4E57EFD}
+name: Description
+key: description
+content-length: 102
+
+Gültig, wenn der Besucher die Mail in einem E-Mail Reader geöffnet hat, aber keinen Links gefolgt ist.
+----field----
+field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
+name: __Display name
+key: __display name
+content-length: 19
+
+Ist E-Mail geöffnet
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 34
+
+20140526T181531:635367249312234207
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+760ec6a5-631f-430c-94be-3b7db96c26f5
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20140526T181531:635367249313952968
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----version----
+language: en
+version: 1
+revision: 8d77924a-ace9-4fa3-9b54-6cb40b5fc107
+
+----field----
+field: {06F2D72A-1924-4B9A-BA1E-186CE4E57EFD}
+name: Description
+key: description
+content-length: 89
+
+True when the visitor has opened the mail in an email reader, but not followed any links.
+----field----
+field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
+name: __Display name
+key: __display name
+content-length: 15
+
+Is Email Opened
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 15
+
+20110221T112700
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+8d77924a-ace9-4fa3-9b54-6cb40b5fc107
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20110405T103635:634375965952846650
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----version----
+language: ja-JP
+version: 1
+revision: 918c2ea6-60b3-497e-9cc4-ecf132a180c6
+
+----field----
+field: {06F2D72A-1924-4B9A-BA1E-186CE4E57EFD}
+name: Description
+key: description
+content-length: 57
+
+ビジターが電子メールを開いたにもかかわらず、どのリンクもクリックしなかった場合に真 (True) と判定されます。
+----field----
+field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
+name: __Display name
+key: __display name
+content-length: 12
+
+電子メールが開かれた場合
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 34
+
+20140526T182701:635367256212496960
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+918c2ea6-60b3-497e-9cc4-ecf132a180c6
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20140526T182701:635367256213903201
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
