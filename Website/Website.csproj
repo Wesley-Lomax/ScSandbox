@@ -100,7 +100,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
-    <Content Include="App_Config\Include\Serialization.config" />
+    <Content Include="App_Config\Include\Serialization.config">
+      <SubType>Designer</SubType>
+    </Content>
     <None Include="Properties\PublishProfiles\Dev.pubxml" />
     <Content Include="Views\PageHeader.cshtml" />
   </ItemGroup>
@@ -138,7 +140,9 @@
     <Content Include="App_Config\ConnectionStrings.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
