@@ -11,6 +11,6 @@
     <description>Sitecore starter site</description>
     <releaseNotes>Summary of changes made in this release of the package.</releaseNotes>
     <copyright>Copyright 2014</copyright>
-    <tags>Tag1 Tag2</tags>
+    <tags>Sitecore MVC</tags>
   </metadata>
 </package>
