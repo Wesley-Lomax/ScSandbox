@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>ScSandbox</id>
-    <version>1.0.$version$</version>
+    <version>$version$</version>
     <title>Sitecore Starter Site</title>
     <authors>Wesley Lomax</authors>
     <owners>Wesley Lomax</owners>
