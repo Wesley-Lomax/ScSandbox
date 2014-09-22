@@ -27,7 +27,6 @@ TestResults
 
 #Project specific ignores
 build/environment.props
-lib/*.dll
 lib/*.pdb
 [Pp]ackages/
 
