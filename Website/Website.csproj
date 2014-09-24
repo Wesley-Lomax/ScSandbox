@@ -46,6 +46,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Kamsar.WebConsole">
+      <HintPath>..\packages\Kamsar.WebConsole.1.2.2.0\lib\net40\Kamsar.WebConsole.dll</HintPath>
+    </Reference>
+    <Reference Include="Ninject">
+      <HintPath>..\packages\Ninject.3.0.1.10\lib\net45-full\Ninject.dll</HintPath>
+    </Reference>
     <Reference Include="Sitecore.Kernel">
       <HintPath>..\Lib\Sitecore.Kernel.dll</HintPath>
       <Private>False</Private>
@@ -64,6 +70,9 @@
     <Reference Include="System.Web.Abstractions" />
     <Reference Include="System.Web.Routing" />
     <Reference Include="System.Configuration" />
+    <Reference Include="Unicorn">
+      <HintPath>..\packages\Unicorn.2.0.4\lib\net45\Unicorn.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Content Include="App_Config\Include\Development.config.example" />
@@ -77,6 +86,7 @@
     <Content Include="App_Config\Include\Serialization.config">
       <SubType>Designer</SubType>
     </Content>
+    <Content Include="packages.config" />
     <None Include="Properties\PublishProfiles\Dev.pubxml" />
     <Content Include="Views\PageHeader.cshtml" />
   </ItemGroup>
