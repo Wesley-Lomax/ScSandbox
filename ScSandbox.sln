@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Website", "Website.csproj", "{70542611-F8F3-4D55-A491-0E23AE0A10AF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Website", "Website\Website.csproj", "{70542611-F8F3-4D55-A491-0E23AE0A10AF}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScSanbox.Tests", "ScSanbox.Tests\ScSanbox.Tests.csproj", "{3E4FADE1-C7B6-4EB0-A3D3-A0BBE2C13941}"
 EndProject
