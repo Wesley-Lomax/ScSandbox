@@ -7,8 +7,8 @@
     <ProjectGuid>{3E4FADE1-C7B6-4EB0-A3D3-A0BBE2C13941}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ScSanbox.Tests</RootNamespace>
-    <AssemblyName>ScSanbox.Tests</AssemblyName>
+    <RootNamespace>ScSandbox.Tests</RootNamespace>
+    <AssemblyName>ScSandbox.Tests</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>

@@ -11,8 +11,8 @@
     <ProjectTypeGuids>{E53F8FEA-EAE0-44A6-8774-FFD645390401};{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Website</RootNamespace>
-    <AssemblyName>Website</AssemblyName>
+    <RootNamespace>ScSandbox.Website</RootNamespace>
+    <AssemblyName>ScSandbox.Website</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <MvcBuildViews>false</MvcBuildViews>
     <FileUpgradeFlags>
@@ -53,14 +53,16 @@
       <HintPath>..\packages\Ninject.3.0.1.10\lib\net45-full\Ninject.dll</HintPath>
     </Reference>
     <Reference Include="Sitecore.Kernel">
-      <HintPath>..\Lib\Sitecore.Kernel.dll</HintPath>
-      <Private>False</Private>
+      <HintPath>..\..\Lib\Sitecore.Kernel.dll</HintPath>
     </Reference>
     <Reference Include="Sitecore.Mvc">
       <HintPath>..\Lib\Sitecore.Mvc.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="System.Web.Mvc, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Web.Mvc, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Lib\System.Web.Mvc.dll</HintPath>
+    </Reference>
     <Reference Include="System.Web.WebPages, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System" />
@@ -76,55 +78,92 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="App_Config\Include\Development.config.example" />
+    <Content Include="Properties\PublishProfiles\Dev.pubxml.user" />
+    <None Include="Scripts\jquery-1.5.1-vsdoc.js" />
+    <Content Include="Scripts\jquery-1.5.1.js" />
+    <Content Include="Scripts\jquery-1.5.1.min.js" />
+    <Content Include="Scripts\jquery-ui-1.8.11.js" />
+    <Content Include="Scripts\jquery-ui-1.8.11.min.js" />
+    <Content Include="Scripts\jquery.unobtrusive-ajax.js" />
+    <Content Include="Scripts\jquery.unobtrusive-ajax.min.js" />
+    <None Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery.validate.js" />
+    <Content Include="Scripts\jquery.validate.min.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\MicrosoftAjax.debug.js" />
+    <Content Include="Scripts\MicrosoftAjax.js" />
+    <Content Include="Scripts\MicrosoftMvcAjax.debug.js" />
+    <Content Include="Scripts\MicrosoftMvcAjax.js" />
+    <Content Include="Scripts\MicrosoftMvcValidation.debug.js" />
+    <Content Include="Scripts\MicrosoftMvcValidation.js" />
+    <Content Include="Scripts\modernizr-1.7.js" />
+    <Content Include="Scripts\modernizr-1.7.min.js" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="content\Controllers\" />
+    <Folder Include="content\Models\" />
     <Folder Include="Controllers\" />
     <Folder Include="Models\" />
-    <Folder Include="Serialization\" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Config\Include\Serialization.config">
+    <Content Include="content\App_Config\Include\Serialization.config">
       <SubType>Designer</SubType>
     </Content>
+    <Content Include="content\packages.config" />
+    <None Include="content\Properties\PublishProfiles\Dev.pubxml" />
+    <Content Include="content\Views\PageHeader.cshtml" />
     <Content Include="packages.config" />
     <None Include="Properties\PublishProfiles\Dev.pubxml" />
     <Content Include="Views\PageHeader.cshtml" />
+    <Content Include="Views\Shared\Error.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Web.config" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Web.config" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <Content Include="Website.nuspec" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Scripts\jquery-1.5.1-vsdoc.js" />
-    <Content Include="Scripts\jquery-1.5.1.js" />
-    <Content Include="Scripts\jquery-1.5.1.min.js" />
-    <Content Include="Scripts\jquery-ui-1.8.11.js" />
-    <Content Include="Scripts\jquery-ui-1.8.11.min.js" />
-    <Content Include="Scripts\jquery.validate-vsdoc.js" />
-    <Content Include="Scripts\jquery.validate.js" />
-    <Content Include="Scripts\jquery.validate.min.js" />
-    <Content Include="Scripts\modernizr-1.7.js" />
-    <Content Include="Scripts\modernizr-1.7.min.js" />
-    <Content Include="Scripts\jquery.unobtrusive-ajax.js" />
-    <Content Include="Scripts\jquery.unobtrusive-ajax.min.js" />
-    <Content Include="Scripts\jquery.validate.unobtrusive.js" />
-    <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
-    <Content Include="Scripts\MicrosoftAjax.js" />
-    <Content Include="Scripts\MicrosoftAjax.debug.js" />
-    <Content Include="Scripts\MicrosoftMvcAjax.js" />
-    <Content Include="Scripts\MicrosoftMvcAjax.debug.js" />
-    <Content Include="Scripts\MicrosoftMvcValidation.js" />
-    <Content Include="Scripts\MicrosoftMvcValidation.debug.js" />
-    <Content Include="Views\Web.config" />
-    <Content Include="Views\_ViewStart.cshtml" />
-    <Content Include="Views\Shared\Error.cshtml" />
-    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="content\Scripts\jquery-1.5.1-vsdoc.js" />
+    <Content Include="content\Scripts\jquery-1.5.1.js" />
+    <Content Include="content\Scripts\jquery-1.5.1.min.js" />
+    <Content Include="content\Scripts\jquery-ui-1.8.11.js" />
+    <Content Include="content\Scripts\jquery-ui-1.8.11.min.js" />
+    <Content Include="content\Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="content\Scripts\jquery.validate.js" />
+    <Content Include="content\Scripts\jquery.validate.min.js" />
+    <Content Include="content\Scripts\modernizr-1.7.js" />
+    <Content Include="content\Scripts\modernizr-1.7.min.js" />
+    <Content Include="content\Scripts\jquery.unobtrusive-ajax.js" />
+    <Content Include="content\Scripts\jquery.unobtrusive-ajax.min.js" />
+    <Content Include="content\Scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="content\Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="content\Scripts\MicrosoftAjax.js" />
+    <Content Include="content\Scripts\MicrosoftAjax.debug.js" />
+    <Content Include="content\Scripts\MicrosoftMvcAjax.js" />
+    <Content Include="content\Scripts\MicrosoftMvcAjax.debug.js" />
+    <Content Include="content\Scripts\MicrosoftMvcValidation.js" />
+    <Content Include="content\Scripts\MicrosoftMvcValidation.debug.js" />
+    <Content Include="content\Views\Web.config" />
+    <Content Include="content\Views\_ViewStart.cshtml" />
+    <Content Include="content\Views\Shared\Error.cshtml" />
+    <Content Include="content\Views\Shared\_Layout.cshtml" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
-    <Content Include="App_Config\ConnectionStrings.config" />
+    <Content Include="content\App_Config\ConnectionStrings.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Web.config">
+    <Content Include="content\Web.config">
       <SubType>Designer</SubType>
     </Content>
   </ItemGroup>

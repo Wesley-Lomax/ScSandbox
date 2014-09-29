@@ -1,6 +1,6 @@
 ﻿using Xunit;
 
-namespace ScSanbox.Tests
+namespace ScSandbox.Tests
 {
     public class Tests
     {
